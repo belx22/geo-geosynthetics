@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Le site est une SPA react-router : toutes les URLs doivent servir index.html,
+# sinon un rechargement sur /contact ou /admin renvoie un 404.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
