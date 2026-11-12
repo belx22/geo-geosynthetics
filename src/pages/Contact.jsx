@@ -170,7 +170,7 @@ export default function Contact() {
                 </div>
                 <div className="field">
                   <label htmlFor="phone">Téléphone</label>
-                  <input id="phone" type="tel" value={values.phone} onChange={set('phone')} placeholder="+237 6 XX XX XX XX" autoComplete="tel" />
+                  <input id="phone" type="tel" value={values.phone} onChange={set('phone')} placeholder="+49 173 1692089" autoComplete="tel" />
                 </div>
               </div>
             </fieldset>

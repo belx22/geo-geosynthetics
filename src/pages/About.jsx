@@ -2,7 +2,8 @@ import Icon from '../components/Icon.jsx'
 import Photo from '../components/Photo.jsx'
 import PageHero from '../components/PageHero.jsx'
 import CtaBand from '../components/CtaBand.jsx'
-import { PILLARS, PHASES, TEAM, COMMITMENTS } from '../data/site.js'
+import HueskerLogo from '../components/HueskerLogo.jsx'
+import { VISION, MISSION, VALUES, PILLARS, PHASES, TEAM, COMMITMENTS } from '../data/site.js'
 import { usePage } from '../data/contenuStore.js'
 
 export default function About() {
@@ -15,11 +16,14 @@ export default function About() {
         seed="ggs-about-hero"
         crumbs={[{ label: 'Accueil', to: '/' }, { label: 'À propos' }]}
         eyebrow="Qui sommes-nous"
-        title="L'ingénierie des sols au service de vos ouvrages"
-        lead="Geo-Geosynthetics est un bureau d'études spécialisé dans le dimensionnement technique et l'optimisation des structures terrestres."
+        title="L'ingénierie innovante au service des infrastructures durables"
+        lead={[
+          "Geo-Geosynthetics est un bureau d'études et d'ingénierie spécialisé dans les solutions géotechniques innovantes, les géosynthétiques et l'optimisation des infrastructures.",
+          "Nous accompagnons les maîtres d'ouvrage publics et privés, les entreprises de construction, les bureaux d'études et les partenaires institutionnels dans la conception et la réalisation de solutions techniques adaptées aux défis des infrastructures modernes.",
+        ]}
       />
 
-      {/* ------------------------------------------------------- Héritage */}
+      {/* --------------------------------------------------------- Vision */}
       <section className="section section--light">
         <div className="container about-intro">
           <div className="about-intro__media">
@@ -38,22 +42,11 @@ export default function About() {
           </div>
 
           <div>
-            <p className="eyebrow">Notre héritage</p>
-            <h2 className="section-title section-title--caps">
-              Une vision panafricaine de l'expertise géotechnique
-            </h2>
-            <p>
-              Fondée sur une volonté d'apporter une rigueur scientifique aux projets
-              d'infrastructure majeurs, Geo-Geosynthetics s'est imposée comme un
-              partenaire incontournable pour les acteurs publics et privés. Notre
-              mission est de transformer la complexité des sols en fondations solides
-              pour le développement durable.
-            </p>
-            <p>
-              Nous combinons une connaissance approfondie des terrains locaux avec
-              l'accès aux technologies mondiales les plus avancées, notamment à
-              travers nos alliances stratégiques industrielles.
-            </p>
+            <p className="eyebrow">Notre vision</p>
+            {/* L'énoncé de vision tient lieu de titre : en casse normale, il
+                reste lisible malgré sa longueur. */}
+            <h2 className="section-title">{VISION.statement}</h2>
+            <p>{VISION.text}</p>
 
             <div className="stats-inline">
               <div className="stat-inline">
@@ -69,6 +62,39 @@ export default function About() {
         </div>
       </section>
 
+      {/* -------------------------------------------------------- Mission */}
+      <section className="section section--white">
+        <div className="container mission">
+          <p className="eyebrow">Notre mission</p>
+          <h2 className="mission__statement">{MISSION.statement}</h2>
+          <p className="mission__text">{MISSION.text}</p>
+        </div>
+      </section>
+
+      {/* --------------------------------------------------------- Valeurs */}
+      <section className="section section--light">
+        <div className="container">
+          <div className="section-head--center" style={{ marginBottom: 40 }}>
+            <p className="eyebrow">Ce qui nous engage</p>
+            <h2 className="section-title section-title--caps">Nos valeurs</h2>
+          </div>
+
+          <div className="values">
+            {VALUES.map((v) => (
+              <article className="value" key={v.title}>
+                <span className="value__icon">
+                  <Icon name={v.icon} size={20} />
+                </span>
+                <div>
+                  <h3>{v.title}</h3>
+                  <p>{v.text}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* --------------------------------------------------------- Piliers */}
       <section className="pillars on-dark">
         <div className="pillars__bg">
@@ -79,11 +105,12 @@ export default function About() {
             <p className="eyebrow">Ce qui nous guide</p>
             <h2 className="section-title section-title--caps">Nos piliers fondamentaux</h2>
           </div>
-          <div className="grid grid-3">
-            {PILLARS.map((p, i) => (
+          <div className="pillars__grid">
+            {PILLARS.map((p) => (
               <article className="pillar" key={p.title}>
-                <span className={`pillar__icon${i === 2 ? ' pillar__icon--blue' : ''}`}>
-                  <Icon name={p.icon} size={26} />
+                <span className="pillar__no">{p.no}</span>
+                <span className="pillar__icon">
+                  <Icon name={p.icon} size={22} />
                 </span>
                 <h3>{p.title}</h3>
                 <p>{p.text}</p>
@@ -160,7 +187,7 @@ export default function About() {
           </div>
           <div className="alliance__frame">
             <div>
-              <span>#</span>
+              <HueskerLogo size={0.95} />
             </div>
           </div>
         </div>

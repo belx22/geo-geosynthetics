@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Icon from '../components/Icon.jsx'
 import Photo from '../components/Photo.jsx'
 import CtaBand from '../components/CtaBand.jsx'
+import HueskerLogo from '../components/HueskerLogo.jsx'
 import { usePublies, usePage } from '../data/contenuStore.js'
 import { resolveImage } from '../data/images.js'
 
@@ -202,7 +203,7 @@ export default function Home() {
           <div className="partner__media">
             <Photo seed="ggs-geogrille-stack" alt="Nappes de géogrilles empilées" />
             <div className="partner__logo">
-              <span>Logo partenaire</span>
+              <HueskerLogo size={0.62} />
             </div>
           </div>
         </div>

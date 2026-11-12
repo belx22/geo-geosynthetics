@@ -8,8 +8,8 @@ export const SITE = {
   name: 'Geo-Geosynthetics',
   baseline: 'Études · Innovations · Ingénieries',
   address: 'St Marie Damas',
-  phone: '+237 6 58 37 68 53',
-  phoneHref: '+237658376853',
+  phone: '+49 173 1692089',
+  phoneHref: '+491731692089',
   email: 'contact@geo-geosynthetics.fr',
   hours: 'Lundi – Vendredi : 8h30 – 18h30',
 }
@@ -480,10 +480,81 @@ export const PHASES = [
   { no: 'Phase 04', icon: 'helmet', title: 'Accompagnement sur le chantier', text: 'Suivi technique rigoureux pour garantir la conformité de la mise en œuvre.' },
 ]
 
+/* ------------------------------------------------ Vision, mission, valeurs */
+
+export const VISION = {
+  statement:
+    "Devenir un acteur de référence de l'ingénierie géotechnique et des technologies géosynthétiques en Afrique.",
+  text:
+    "Nous ambitionnons de contribuer à la transformation durable des infrastructures grâce à l'intégration de solutions techniques innovantes, performantes et adaptées aux contraintes environnementales et géotechniques.",
+}
+
+export const MISSION = {
+  statement:
+    "Concevoir, proposer et accompagner la mise en œuvre de solutions d'ingénierie permettant de sécuriser les ouvrages, optimiser les coûts de construction et prolonger leur durée de vie.",
+  text:
+    "Nous intervenons notamment dans les domaines de la stabilisation des sols, du renforcement des remblais, du traitement des talus, de la gestion des eaux et de la protection des infrastructures.",
+}
+
+export const VALUES = [
+  {
+    icon: 'award',
+    title: 'Excellence technique',
+    text: "Apporter des réponses rigoureuses aux problématiques d'ingénierie.",
+  },
+  {
+    icon: 'bulb',
+    title: 'Innovation',
+    text: 'Intégrer les technologies modernes et les solutions géosynthétiques.',
+  },
+  {
+    icon: 'shield',
+    title: 'Durabilité',
+    text: 'Privilégier des ouvrages résistants et adaptés à leur environnement.',
+  },
+  {
+    icon: 'users',
+    title: 'Engagement',
+    text: 'Accompagner nos clients à chaque étape de leurs projets.',
+  },
+  {
+    icon: 'globe',
+    title: 'Partenariat',
+    text: "Développer des collaborations techniques avec des acteurs spécialisés à l'échelle nationale et internationale.",
+  },
+]
+
 export const PILLARS = [
-  { icon: 'target', title: 'Études', text: 'Analyser chaque situation avec une rigueur absolue pour identifier les solutions les plus efficientes techniquement.' },
-  { icon: 'bulb', title: 'Innovations', text: "Intégrer les dernières avancées en géosynthétiques pour réduire l'impact environnemental des chantiers." },
-  { icon: 'helmet', title: 'Ingénieries', text: 'Accompagner la mise en œuvre sur le terrain pour garantir que chaque dimensionnement devient une réalité pérenne.' },
+  {
+    no: '01',
+    icon: 'userSearch',
+    title: 'Diagnostic et reconnaissance',
+    text: "Analyse du site, identification des contraintes géotechniques et définition des besoins du projet.",
+  },
+  {
+    no: '02',
+    icon: 'edit',
+    title: 'Études et conception',
+    text: "Élaboration des solutions techniques, études de faisabilité et dimensionnement des ouvrages.",
+  },
+  {
+    no: '03',
+    icon: 'target',
+    title: 'Optimisation technique et économique',
+    text: "Sélection des technologies adaptées et recherche du meilleur compromis entre performance, coût et durabilité.",
+  },
+  {
+    no: '04',
+    icon: 'helmet',
+    title: 'Assistance technique et mise en œuvre',
+    text: "Accompagnement des entreprises et suivi technique de l'exécution des solutions préconisées.",
+  },
+  {
+    no: '05',
+    icon: 'checkCircle',
+    title: 'Contrôle et performance',
+    text: "Assistance à la vérification de la conformité des travaux et à l'évaluation des performances des ouvrages.",
+  },
 ]
 
 export const COMMITMENTS = [

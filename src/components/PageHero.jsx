@@ -28,8 +28,14 @@ export default function PageHero({
 }) {
   const surtitre = page?.heroEyebrow || eyebrow
   const titre = page?.heroTitle || title
-  const accroche = page?.heroLead || lead
   const visuel = page?.heroImage || image
+
+  /* L'accroche peut tenir en plusieurs paragraphes. Saisie en administration,
+     elle les sépare par une ligne vide ; dans le code, par un tableau. */
+  const source = page?.heroLead || lead
+  const paragraphes = Array.isArray(source)
+    ? source
+    : String(source ?? '').split(/\n\s*\n/).filter(Boolean)
 
   return (
     <section className={`page-hero${tall ? ' page-hero--tall' : ''}`}>
@@ -41,7 +47,9 @@ export default function PageHero({
         {badge && <span className="badge" style={{ marginBottom: 16 }}>{badge}</span>}
         {surtitre && <p className="eyebrow">{surtitre}</p>}
         <h1 className="page-hero__title">{titre}</h1>
-        {accroche && <p className="page-hero__lead">{accroche}</p>}
+        {paragraphes.map((texte) => (
+          <p className="page-hero__lead" key={texte.slice(0, 40)}>{texte}</p>
+        ))}
         {children}
       </div>
     </section>

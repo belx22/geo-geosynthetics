@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Icon from '../components/Icon.jsx'
 import Photo from '../components/Photo.jsx'
 import PageHero from '../components/PageHero.jsx'
+import HueskerLogo from '../components/HueskerLogo.jsx'
 import { PROJECT_FAMILIES, FEATURED_PROJECT } from '../data/site.js'
 import { usePublies, usePage } from '../data/contenuStore.js'
 
@@ -199,7 +200,7 @@ export default function References() {
               </p>
             </div>
             <div className="partners__card">
-              <Icon name="layers" size={34} />
+              <HueskerLogo size={0.58} />
               <span>Partenaire technologique</span>
             </div>
           </div>

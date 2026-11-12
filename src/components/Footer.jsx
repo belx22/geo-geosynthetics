@@ -84,6 +84,15 @@ export default function Footer() {
             <a href="#plan-du-site">Plan du site</a>
           </nav>
         </div>
+
+        {/* Mentions de marques exigées dès lors que le logo et les noms du
+            fabricant figurent sur le site (cahier des charges § VIII). */}
+        <p className="footer__marques">
+          HUESKER<sup>®</sup> et le signe associé sont des marques déposées de
+          HUESKER Synthetic GmbH. Les noms de solutions cités (Fortrac<sup>®</sup>,
+          Basetrac<sup>®</sup>, Incomat<sup>®</sup>, Stabilenka<sup>®</sup>,
+          Tektoseal<sup>®</sup>) appartiennent à leurs titulaires respectifs.
+        </p>
       </div>
     </footer>
   )
