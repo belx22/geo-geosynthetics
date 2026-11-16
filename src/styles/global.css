@@ -584,22 +584,34 @@ p:last-child { margin-bottom: 0; }
    ACCUEIL — méthodologie (cartes vertes décalées)
    ========================================================================== */
 .method { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
-.method__stack { position: relative; min-height: 460px; }
+/* Décalage en flux plutôt qu'en positionnement absolu : les cartes gardent le
+   rythme décalé de la maquette sans risque de chevauchement quand le texte
+   s'allonge. */
+.method__stack { display: grid; gap: 16px; align-content: start; }
 .method-card {
-  position: absolute;
-  width: 305px;
-  padding: 26px 24px;
+  width: 100%;
+  max-width: 360px;
+  padding: 22px 26px 26px;
+}
+.method-card__no {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--ardoise-600);
+  margin-bottom: 8px;
 }
 .method-card h3 {
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 600;
   color: var(--ardoise-900);
   margin-bottom: 10px;
 }
 .method-card p { font-size: 13px; line-height: 1.6; color: var(--ardoise-700); }
-.method-card--1 { background: var(--vert-300); top: 0; left: 190px; }
-.method-card--2 { background: var(--vert-100); top: 140px; left: 0; }
-.method-card--3 { background: var(--vert-50); top: 300px; left: 180px; }
+.method-card--1 { background: var(--vert-300); justify-self: end; }
+.method-card--2 { background: var(--vert-100); justify-self: start; }
+.method-card--3 { background: var(--vert-50); justify-self: end; margin-right: 32px; }
 .method__media { position: relative; }
 .method__media .photo { height: 100%; min-height: 420px; }
 .method__media::before {

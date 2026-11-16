@@ -18,13 +18,13 @@ export const SITE = {
 
 export const DOMAINS = [
   {
-    slug: 'routes-et-voiries',
-    title: 'Routes et voiries',
+    slug: 'routes-et-infrastructures-routieres',
+    title: "Routes et infrastructures routières",
     family: 'Transport',
     icon: 'road',
     seed: 'ggs-route-1',
     excerpt:
-      'Optimisation des structures de chaussées pour supporter des trafics intenses et réduire les coûts de maintenance.',
+      "Renforcement des chaussées, stabilisation des plateformes, remblais routiers et traitement des zones instables.",
     heroLead: 'Des chaussées plus durables, même sur les sols les plus difficiles.',
     intro:
       'La construction routière est confrontée à des défis géotechniques majeurs qui compromettent la durabilité des infrastructures et augmentent les budgets de maintenance.',
@@ -89,13 +89,79 @@ export const DOMAINS = [
     ctaTitle: 'Vous avez un projet routier ?',
   },
   {
-    slug: 'ouvrages-ferroviaires',
-    title: 'Ouvrages ferroviaires',
+    slug: 'stabilisation-des-talus-et-soutenement',
+    title: "Stabilisation des talus et soutènement",
+    family: 'Géotechnique',
+    icon: 'mountain',
+    seed: 'ggs-talus-1',
+    excerpt:
+      "Traitement des glissements de terrain, remblais renforcés et stabilisation des talus de grandes hauteurs.",
+    heroLead: "Gagner de l'emprise sans renoncer à la stabilité.",
+    intro:
+      "Les murs de soutènement traditionnels mobilisent des emprises et des ouvrages en béton lourds, longs à mettre en œuvre.",
+    solutionsIntro:
+      'Les massifs en sol renforcé permettent des pentes raides, une mise en œuvre rapide et une intégration paysagère maîtrisée.',
+    issues: [
+      { icon: 'mountain', title: 'Emprise foncière limitée', text: 'Impossibilité de réaliser des talus à pente douce en zone contrainte.' },
+      { icon: 'alert', title: 'Glissement de terrain', text: "Instabilité des pentes sous l'effet des pluies et de la saturation du sol." },
+      { icon: 'wallet', title: 'Ouvrages béton coûteux', text: 'Fondations profondes et délais de réalisation importants.' },
+    ],
+    solutions: [
+      { title: 'Massifs en sol renforcé', text: 'Nappes de géogrilles dimensionnées pour des parements raides jusqu’à la verticale.', perks: ['Emprise réduite', 'Mise en œuvre rapide'], seed: 'ggs-massif' },
+      { title: 'Parements végétalisables', text: "Intégration paysagère par parement souple végétalisé en remplacement du béton.", perks: ['Insertion paysagère', 'Entretien limité'], seed: 'ggs-vegetal' },
+      { title: 'Confortement de talus existants', text: 'Reprise de pentes instables par ancrage et renforcement de surface.', perks: ['Sans démolition', 'Chantier allégé'], seed: 'ggs-confortement' },
+    ],
+    benefits: [
+      { icon: 'shield', label: 'Stabilité long terme' },
+      { icon: 'expand', label: 'Gain de surface' },
+      { icon: 'clock', label: 'Chantier accéléré' },
+      { icon: 'wallet', label: 'Béton économisé' },
+    ],
+    guide: { title: 'Guide des massifs en sol renforcé', text: 'Hypothèses de calcul, vérifications internes et externes, dispositions constructives de parement.', seed: 'ggs-guide-talus' },
+    showcase: { kpis: [{ value: '3 200 m²', label: 'Parement renforcé' }, { value: '11 m', label: 'Hauteur maximale' }, { value: '−45%', label: 'Emprise gagnée' }], seed: 'ggs-talus-ref' },
+    ctaTitle: 'Vous avez un projet de soutènement ?',
+  },
+  {
+    slug: 'protection-des-berges-et-lutte-contre-l-erosion',
+    title: "Protection des berges et lutte contre l'érosion",
+    family: 'Environnement',
+    icon: 'waves',
+    seed: 'ggs-erosion-1',
+    excerpt:
+      "Protection des cours d'eau, maîtrise de l'érosion et stabilisation des berges.",
+    heroLead: 'Fixer les sols, accompagner la végétation.',
+    intro:
+      "Le ruissellement, la houle et les crues emportent les sols de surface et déstabilisent progressivement les ouvrages.",
+    solutionsIntro:
+      "Nous associons des nattes anti-érosion, des conteneurs géotextiles et des solutions végétalisées adaptées au site.",
+    issues: [
+      { icon: 'waves', title: 'Érosion littorale', text: 'Recul du trait de côte et exposition des infrastructures côtières.' },
+      { icon: 'droplet', title: 'Ravinement des talus', text: 'Entraînement de la terre végétale avant installation du couvert végétal.' },
+      { icon: 'alert', title: 'Milieux sensibles', text: 'Interventions contraintes par la préservation des écosystèmes locaux.' },
+    ],
+    solutions: [
+      { title: 'Nattes anti-érosion', text: "Maintien de la terre végétale le temps de l'enracinement du couvert végétal.", perks: ['Végétalisation rapide', 'Intégration paysagère'], seed: 'ggs-natte' },
+      { title: 'Conteneurs géotextiles', text: 'Structures souples ensablées pour la défense côtière et la protection des berges.', perks: ['Matériau local', 'Démontable'], seed: 'ggs-conteneur' },
+      { title: 'Protection de berges', text: 'Complexes filtrants sous enrochement ou sous matelas béton.', perks: ['Filtration assurée', 'Résistance au courant'], seed: 'ggs-berge' },
+    ],
+    benefits: [
+      { icon: 'shield', label: 'Trait de côte sécurisé' },
+      { icon: 'layers', label: 'Sols fixés' },
+      { icon: 'globe', label: 'Impact réduit' },
+      { icon: 'wallet', label: 'Matériaux locaux' },
+    ],
+    guide: { title: "Guide de la protection contre l'érosion", text: 'Critères de choix entre nattes, conteneurs et matelas selon la sollicitation hydraulique.', seed: 'ggs-guide-erosion' },
+    showcase: { kpis: [{ value: '12 000 m³', label: 'Volume de sable' }, { value: '1,8 km', label: 'Littoral protégé' }, { value: '50 ans', label: 'Durabilité estimée' }], seed: 'ggs-erosion-ref' },
+    ctaTitle: 'Vous avez un projet de protection ?',
+  },
+  {
+    slug: 'infrastructures-ferroviaires',
+    title: "Infrastructures ferroviaires",
     family: 'Transport',
     icon: 'train',
     seed: 'ggs-rail-1',
     excerpt:
-      "Stabilisation des couches d'assise et réduction des vibrations pour les lignes à grande vitesse.",
+      "Renforcement des plateformes ferroviaires, séparation des couches et amélioration de la stabilité des voies.",
     heroLead: "Des voies stables, des couches d'assise qui durent.",
     intro:
       "Les sollicitations dynamiques répétées dégradent les couches d'assise et provoquent des tassements différentiels coûteux à reprendre en exploitation.",
@@ -122,13 +188,13 @@ export const DOMAINS = [
     ctaTitle: 'Vous avez un projet ferroviaire ?',
   },
   {
-    slug: 'stabilisation-des-sols',
-    title: 'Stabilisation des sols',
+    slug: 'genie-civil-et-ouvrages-industriels',
+    title: "Génie civil et ouvrages industriels",
     family: 'Géotechnique',
     icon: 'mountain',
     seed: 'ggs-sol-1',
     excerpt:
-      "Renforcement mécanique des sols compressibles pour permettre l'édification d'ouvrages lourds.",
+      "Renforcement des sols de fondation, plateformes industrielles et aménagements techniques.",
     heroLead: 'Construire lourd sur des sols qui ne le permettaient pas.',
     intro:
       "Les sols compressibles imposent souvent des solutions de fondation profondes, coûteuses et consommatrices de ressources.",
@@ -153,39 +219,6 @@ export const DOMAINS = [
     guide: { title: 'Guide du renforcement de sols', text: 'Méthodes de dimensionnement des matelas de répartition et des remblais sur sols compressibles.', seed: 'ggs-guide-sol' },
     showcase: { kpis: [{ value: '62k m²', label: 'Plateforme renforcée' }, { value: '4,5 m', label: 'Hauteur de remblai' }, { value: '−35%', label: 'Inclusions évitées' }], seed: 'ggs-sol-ref' },
     ctaTitle: 'Vous avez un projet de terrassement ?',
-  },
-  {
-    slug: 'renforcement-de-talus-et-murs',
-    title: 'Renforcement de talus et murs',
-    family: 'Géotechnique',
-    icon: 'mountain',
-    seed: 'ggs-talus-1',
-    excerpt:
-      'Conception de massifs en sol renforcé par géogrilles pour des pentes raides et sécurisées.',
-    heroLead: "Gagner de l'emprise sans renoncer à la stabilité.",
-    intro:
-      "Les murs de soutènement traditionnels mobilisent des emprises et des ouvrages en béton lourds, longs à mettre en œuvre.",
-    solutionsIntro:
-      'Les massifs en sol renforcé permettent des pentes raides, une mise en œuvre rapide et une intégration paysagère maîtrisée.',
-    issues: [
-      { icon: 'mountain', title: 'Emprise foncière limitée', text: 'Impossibilité de réaliser des talus à pente douce en zone contrainte.' },
-      { icon: 'alert', title: 'Glissement de terrain', text: "Instabilité des pentes sous l'effet des pluies et de la saturation du sol." },
-      { icon: 'wallet', title: 'Ouvrages béton coûteux', text: 'Fondations profondes et délais de réalisation importants.' },
-    ],
-    solutions: [
-      { title: 'Massifs en sol renforcé', text: 'Nappes de géogrilles dimensionnées pour des parements raides jusqu’à la verticale.', perks: ['Emprise réduite', 'Mise en œuvre rapide'], seed: 'ggs-massif' },
-      { title: 'Parements végétalisables', text: "Intégration paysagère par parement souple végétalisé en remplacement du béton.", perks: ['Insertion paysagère', 'Entretien limité'], seed: 'ggs-vegetal' },
-      { title: 'Confortement de talus existants', text: 'Reprise de pentes instables par ancrage et renforcement de surface.', perks: ['Sans démolition', 'Chantier allégé'], seed: 'ggs-confortement' },
-    ],
-    benefits: [
-      { icon: 'shield', label: 'Stabilité long terme' },
-      { icon: 'expand', label: 'Gain de surface' },
-      { icon: 'clock', label: 'Chantier accéléré' },
-      { icon: 'wallet', label: 'Béton économisé' },
-    ],
-    guide: { title: 'Guide des massifs en sol renforcé', text: 'Hypothèses de calcul, vérifications internes et externes, dispositions constructives de parement.', seed: 'ggs-guide-talus' },
-    showcase: { kpis: [{ value: '3 200 m²', label: 'Parement renforcé' }, { value: '11 m', label: 'Hauteur maximale' }, { value: '−45%', label: 'Emprise gagnée' }], seed: 'ggs-talus-ref' },
-    ctaTitle: 'Vous avez un projet de soutènement ?',
   },
   {
     slug: 'systemes-de-drainage',
@@ -218,6 +251,9 @@ export const DOMAINS = [
     ],
     guide: { title: 'Guide du drainage géosynthétique', text: 'Dimensionnement hydraulique, critères de filtration et vérification du non-colmatage.', seed: 'ggs-guide-drain' },
     showcase: { kpis: [{ value: '18k m²', label: 'Drainage posé' }, { value: '2,4 km', label: 'Linéaire drainé' }, { value: '−50%', label: 'Granulats évités' }], seed: 'ggs-drain-ref' },
+    /* Hors de la liste des domaines arretee par le client : conservee
+       en administration, retiree du site public. */
+    published: false,
     ctaTitle: 'Vous avez un projet de drainage ?',
   },
   {
@@ -251,40 +287,10 @@ export const DOMAINS = [
     ],
     guide: { title: "Guide de l'étanchéité par géomembranes", text: 'Choix du complexe, dispositions de liaison et contrôle qualité des soudures.', seed: 'ggs-guide-hydro' },
     showcase: { kpis: [{ value: '34k m²', label: 'Géomembrane posée' }, { value: '120k m³', label: 'Volume retenu' }, { value: '50 ans', label: 'Durabilité estimée' }], seed: 'ggs-hydro-ref' },
+    /* Hors de la liste des domaines arretee par le client : conservee
+       en administration, retiree du site public. */
+    published: false,
     ctaTitle: 'Vous avez un projet hydraulique ?',
-  },
-  {
-    slug: 'protection-contre-l-erosion',
-    title: "Protection contre l'érosion",
-    family: 'Environnement',
-    icon: 'waves',
-    seed: 'ggs-erosion-1',
-    excerpt:
-      'Solutions de végétalisation et de confinement pour la protection des berges et des littoraux.',
-    heroLead: 'Fixer les sols, accompagner la végétation.',
-    intro:
-      "Le ruissellement, la houle et les crues emportent les sols de surface et déstabilisent progressivement les ouvrages.",
-    solutionsIntro:
-      "Nous associons des nattes anti-érosion, des conteneurs géotextiles et des solutions végétalisées adaptées au site.",
-    issues: [
-      { icon: 'waves', title: 'Érosion littorale', text: 'Recul du trait de côte et exposition des infrastructures côtières.' },
-      { icon: 'droplet', title: 'Ravinement des talus', text: 'Entraînement de la terre végétale avant installation du couvert végétal.' },
-      { icon: 'alert', title: 'Milieux sensibles', text: 'Interventions contraintes par la préservation des écosystèmes locaux.' },
-    ],
-    solutions: [
-      { title: 'Nattes anti-érosion', text: "Maintien de la terre végétale le temps de l'enracinement du couvert végétal.", perks: ['Végétalisation rapide', 'Intégration paysagère'], seed: 'ggs-natte' },
-      { title: 'Conteneurs géotextiles', text: 'Structures souples ensablées pour la défense côtière et la protection des berges.', perks: ['Matériau local', 'Démontable'], seed: 'ggs-conteneur' },
-      { title: 'Protection de berges', text: 'Complexes filtrants sous enrochement ou sous matelas béton.', perks: ['Filtration assurée', 'Résistance au courant'], seed: 'ggs-berge' },
-    ],
-    benefits: [
-      { icon: 'shield', label: 'Trait de côte sécurisé' },
-      { icon: 'layers', label: 'Sols fixés' },
-      { icon: 'globe', label: 'Impact réduit' },
-      { icon: 'wallet', label: 'Matériaux locaux' },
-    ],
-    guide: { title: "Guide de la protection contre l'érosion", text: 'Critères de choix entre nattes, conteneurs et matelas selon la sollicitation hydraulique.', seed: 'ggs-guide-erosion' },
-    showcase: { kpis: [{ value: '12 000 m³', label: 'Volume de sable' }, { value: '1,8 km', label: 'Littoral protégé' }, { value: '50 ans', label: 'Durabilité estimée' }], seed: 'ggs-erosion-ref' },
-    ctaTitle: 'Vous avez un projet de protection ?',
   },
   {
     slug: 'centres-de-stockage',
@@ -317,8 +323,12 @@ export const DOMAINS = [
     ],
     guide: { title: 'Guide du confinement de sites', text: 'Composition des barrières, essais de réception et plan de contrôle post-exploitation.', seed: 'ggs-guide-stockage' },
     showcase: { kpis: [{ value: '52k m²', label: 'Barrière posée' }, { value: '6 ha', label: 'Site réhabilité' }, { value: '30 ans', label: 'Suivi assuré' }], seed: 'ggs-stockage-ref' },
+    /* Hors de la liste des domaines arretee par le client : conservee
+       en administration, retiree du site public. */
+    published: false,
     ctaTitle: 'Vous avez un projet environnemental ?',
   },
+
 ]
 
 export const DOMAIN_FAMILIES = ['Tous', 'Transport', 'Géotechnique', 'Hydraulique', 'Environnement']

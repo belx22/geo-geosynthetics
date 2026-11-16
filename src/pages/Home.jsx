@@ -14,9 +14,21 @@ const HERO_FEATURES = [
 ]
 
 const METHOD = [
-  { title: 'Diagnostic géotechnique', text: "Analyse approfondie des rapports de sol et identification des contraintes spécifiques à l'ouvrage." },
-  { title: 'Dimensionnement technique', text: 'Calculs de stabilité et choix des géosynthétiques optimaux pour maximiser la sécurité et réduire les coûts.' },
-  { title: 'Validation et suivi', text: "Fourniture des notes de calcul détaillées et assistance technique lors de la phase d'installation." },
+  {
+    no: '01',
+    title: 'Diagnostic et expertise géotechnique',
+    text: "Analyse des caractéristiques du sol, identification des contraintes géotechniques et évaluation des risques d'instabilité, d'érosion et de dégradation des ouvrages.",
+  },
+  {
+    no: '02',
+    title: 'Études et dimensionnement technique',
+    text: 'Conception et dimensionnement de solutions innovantes intégrant les géosynthétiques pour la stabilisation des talus, les remblais renforcés, le traitement des berges et la protection des infrastructures.',
+  },
+  {
+    no: '03',
+    title: 'Assistance technique et suivi des travaux',
+    text: 'Accompagnement technique des projets, fourniture des notes de calcul, assistance à la mise en œuvre des géosynthétiques et contrôle de conformité des solutions préconisées.',
+  },
 ]
 
 /* La mosaïque reprend les six premiers domaines publiés : dépublier un
@@ -99,6 +111,7 @@ export default function Home() {
             <div className="method__stack">
               {METHOD.map((m, i) => (
                 <article className={`method-card method-card--${i + 1}`} key={m.title}>
+                  <span className="method-card__no">{m.no}</span>
                   <h3>{m.title}</h3>
                   <p>{m.text}</p>
                 </article>
@@ -116,10 +129,11 @@ export default function Home() {
         <div className="container">
           <div className="section-head--center">
             <p className="eyebrow">Expertise sectorielle</p>
-            <h2 className="section-title">Domaines d'application</h2>
+            <h2 className="section-title">Nos domaines d’application</h2>
             <p className="section-lead">
-              Découvrez nos interventions spécialisées sur les projets
-              d'infrastructure les plus exigeants.
+              Nous déployons des technologies innovantes en géosynthétiques et des
+              solutions d'ingénierie adaptées aux enjeux des infrastructures
+              routières, ferroviaires, hydrauliques et environnementales.
             </p>
           </div>
 
@@ -148,8 +162,9 @@ export default function Home() {
             <div className="why__float">
               <h4>Ingénierie de proximité</h4>
               <p>
-                Nous nous déplaçons sur vos sites pour une compréhension parfaite
-                des réalités du terrain.
+                Une présence sur le terrain pour analyser les contraintes réelles,
+                proposer des solutions adaptées et accompagner efficacement chaque
+                projet.
               </p>
             </div>
           </div>
@@ -184,11 +199,12 @@ export default function Home() {
         <div className="container partner__inner">
           <div>
             <span className="badge">Alliance stratégique</span>
-            <h2 className="partner__title">Une expertise portée par l'excellence Huesker</h2>
+            <h1 className="partner__title">UNE EXPERTISE RENFORCÉE PAR DES PARTENARIATS TECHNOLOGIQUES DE RÉFÉRENCE</h1>
             <p>
-              En tant que partenaire privilégié, nous intégrons les solutions du
-              leader mondial des géosynthétiques pour garantir la durabilité
-              exceptionnelle de vos ouvrages.
+              Grâce à notre collaboration avec des partenaires technologiques de
+              référence, notamment HUESKER, nous intégrons des solutions
+              géosynthétiques innovantes et performantes dans la conception et la
+              réalisation de nos projets.
             </p>
             <div className="partner__actions">
               <a className="btn btn--green" href="#documentation">

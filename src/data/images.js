@@ -30,7 +30,7 @@ export const POOLS = {
            'equipe-13', 'equipe-14', 'equipe-15'],
   bureau: ['bureau-01', 'bureau-02', 'bureau-03', 'bureau-04'],
   plans: ['plans-01', 'plans-02', 'plans-03', 'plans-04', 'plans-05'],
-  materiau: ['materiau-01', 'route-11', 'terrassement-01'],
+  materiau: ['realisation-geogrille-rouleau', 'materiau-01', 'route-11', 'terrassement-01'],
 }
 
 /* Affectation explicite : un emplacement du site -> une photographie. */
@@ -38,8 +38,12 @@ const MAP = {
   /* ---------------------------------------------------------- Accueil */
   'ggs-hero-home': 'route-11',
   'ggs-ingenieur-terrain': 'equipe-03',
-  'ggs-why': 'equipe-06',
-  'ggs-geogrille-stack': 'materiau-01',
+  /* Photographie d'un ouvrage réellement réalisé, en lieu et place du visuel
+     de substitution. */
+  'ggs-why': 'realisation-massif-sol-renforce',
+  /* Bandeau partenaire de l'accueil : géogrille réelle, et non des armatures
+     métalliques qui ne relèvent pas des géosynthétiques. */
+  'ggs-geogrille-stack': 'realisation-geogrille-rouleau',
   'ggs-m-sol': 'terrassement-01',
   'ggs-m-talus': 'route-06',
   'ggs-m-drain': 'terrassement-02',
@@ -72,7 +76,7 @@ const MAP = {
   'ggs-cta-split': 'equipe-09',
 
   /* ------------------------------------- Domaines : solutions et ressources */
-  'ggs-geogrille': 'materiau-01',
+  'ggs-geogrille': 'realisation-geogrille-rouleau',
   'ggs-geotextile': 'route-05',
   'ggs-enrobe': 'route-03',
   'ggs-ballast': 'rail-01',

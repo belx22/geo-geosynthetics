@@ -28,11 +28,11 @@ export default function Footer() {
         <div>
           <h2 className="footer__title">Expertise</h2>
           <ul className="footer__list">
-            <li><Link to="/domaines/renforcement-de-talus-et-murs">Renforcement</Link></li>
-            <li><Link to="/domaines/systemes-de-drainage">Drainage</Link></li>
-            <li><Link to="/domaines/stabilisation-des-sols">Stabilisation</Link></li>
-            <li><Link to="/domaines/ouvrages-hydrauliques">Filtration</Link></li>
-            <li><Link to="/domaines/centres-de-stockage">Environnement</Link></li>
+            <li><Link to="/domaines/routes-et-infrastructures-routieres">Routes et infrastructures</Link></li>
+            <li><Link to="/domaines/stabilisation-des-talus-et-soutenement">Talus et soutènement</Link></li>
+            <li><Link to="/domaines/protection-des-berges-et-lutte-contre-l-erosion">Berges et érosion</Link></li>
+            <li><Link to="/domaines/infrastructures-ferroviaires">Infrastructures ferroviaires</Link></li>
+            <li><Link to="/domaines/genie-civil-et-ouvrages-industriels">Génie civil et industrie</Link></li>
           </ul>
         </div>
 

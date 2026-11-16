@@ -2,6 +2,11 @@
    Généré depuis le dossier ; sert de catalogue à la médiathèque. */
 
 export const BUNDLED_MEDIA = [
+  /* Photographies des ouvrages réalisés par Geo-Geosynthetics. Placées en tête
+     du catalogue : elles priment sur les visuels de substitution. */
+  {"id": "realisation-massif-sol-renforce", "name": "Massif en sol renforcé — parement enveloppé", "src": "/images/realisation-massif-sol-renforce.webp", "famille": "Réalisations Geo-Geosynthetics", "kind": "bundled"},
+  {"id": "realisation-geogrille-rouleau", "name": "Géogrille — déroulage sur plateforme", "src": "/images/realisation-geogrille-rouleau.webp", "famille": "Réalisations Geo-Geosynthetics", "kind": "bundled"},
+
   {"id": "bureau-01", "name": "Bureau 01", "src": "/images/bureau-01.webp", "famille": "Bureau et réunions", "kind": "bundled"},
   {"id": "bureau-02", "name": "Bureau 02", "src": "/images/bureau-02.webp", "famille": "Bureau et réunions", "kind": "bundled"},
   {"id": "bureau-03", "name": "Bureau 03", "src": "/images/bureau-03.webp", "famille": "Bureau et réunions", "kind": "bundled"},
