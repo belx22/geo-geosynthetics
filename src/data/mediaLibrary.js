@@ -6,6 +6,12 @@ export const BUNDLED_MEDIA = [
      du catalogue : elles priment sur les visuels de substitution. */
   {"id": "realisation-massif-sol-renforce", "name": "Massif en sol renforcé — parement enveloppé", "src": "/images/realisation-massif-sol-renforce.webp", "famille": "Réalisations Geo-Geosynthetics", "kind": "bundled"},
   {"id": "realisation-geogrille-rouleau", "name": "Géogrille — déroulage sur plateforme", "src": "/images/realisation-geogrille-rouleau.webp", "famille": "Réalisations Geo-Geosynthetics", "kind": "bundled"},
+  {"id": "realisation-mur-sol-renforce-vegetalise", "name": "Mur en sol renforcé végétalisé — grande hauteur", "src": "/images/realisation-mur-sol-renforce-vegetalise.webp", "famille": "Réalisations Geo-Geosynthetics", "kind": "bundled"},
+  {"id": "realisation-route-geogrille-enrobe", "name": "Géogrille de renforcement sous enrobé", "src": "/images/realisation-route-geogrille-enrobe.webp", "famille": "Réalisations Geo-Geosynthetics", "kind": "bundled"},
+  {"id": "realisation-tube-geotextile-plan-eau", "name": "Tube géotextile — protection de berge de retenue", "src": "/images/realisation-tube-geotextile-plan-eau.webp", "famille": "Réalisations Geo-Geosynthetics", "kind": "bundled"},
+  /* ⚠️ Visuel du fabricant, filigrane HUESKER visible. Sa publication suppose
+     l'autorisation écrite du fabricant (cahier des charges § VIII). */
+  {"id": "realisation-matelas-berge-riviere", "name": "Matelas béton — protection de berge (visuel fabricant)", "src": "/images/realisation-matelas-berge-riviere.webp", "famille": "Réalisations Geo-Geosynthetics", "kind": "bundled"},
 
   {"id": "bureau-01", "name": "Bureau 01", "src": "/images/bureau-01.webp", "famille": "Bureau et réunions", "kind": "bundled"},
   {"id": "bureau-02", "name": "Bureau 02", "src": "/images/bureau-02.webp", "famille": "Bureau et réunions", "kind": "bundled"},

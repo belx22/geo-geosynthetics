@@ -45,11 +45,11 @@ const MAP = {
      métalliques qui ne relèvent pas des géosynthétiques. */
   'ggs-geogrille-stack': 'realisation-geogrille-rouleau',
   'ggs-m-sol': 'terrassement-01',
-  'ggs-m-talus': 'route-06',
+  'ggs-m-talus': 'realisation-mur-sol-renforce-vegetalise',
   'ggs-m-drain': 'terrassement-02',
   'ggs-m-env': 'environnement-01',
   'ggs-m-rail': 'rail-01',
-  'ggs-m-route': 'route-01',
+  'ggs-m-route': 'realisation-route-geogrille-enrobe',
 
   /* ---------------------------------------------------------- À propos */
   'ggs-about-hero': 'route-07',
@@ -64,13 +64,13 @@ const MAP = {
 
   /* ------------------------------------------------- Domaines : vignettes */
   'ggs-domains-hero': 'route-02',
-  'ggs-route-1': 'route-01',
+  'ggs-route-1': 'realisation-route-geogrille-enrobe',
   'ggs-rail-1': 'rail-01',
   'ggs-sol-1': 'terrassement-01',
-  'ggs-talus-1': 'route-06',
+  'ggs-talus-1': 'realisation-mur-sol-renforce-vegetalise',
   'ggs-drain-1': 'terrassement-02',
-  'ggs-hydro-1': 'hydraulique-01',
-  'ggs-erosion-1': 'littoral-01',
+  'ggs-hydro-1': 'realisation-tube-geotextile-plan-eau',
+  'ggs-erosion-1': 'realisation-matelas-berge-riviere',
   'ggs-stockage-1': 'environnement-01',
   'ggs-engagement': 'plans-03',
   'ggs-cta-split': 'equipe-09',
